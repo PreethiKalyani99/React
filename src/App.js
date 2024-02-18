@@ -1,25 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
+function Greeting(props){
+  // console.log(props)
+  return <div className='container'>Hello {props.name}</div>
+}
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  var viewportWidth  = document.documentElement.clientWidth;
+var viewportHeight = document.documentElement.clientHeight;
+console.log(viewportHeight,viewportWidth)
+  return <Greeting name= "Preethi"/>
 }
 
 export default App;
