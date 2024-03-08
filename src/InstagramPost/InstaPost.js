@@ -42,6 +42,7 @@ export function InstaPost(){
                             <ShowComments
                                 showComments={showComments}
                                 oldComments={oldComments}
+                                setOldComments={setOldComments}
                             />
                         </CardBody>
                     </Card>
