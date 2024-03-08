@@ -1,6 +1,6 @@
 import React from "react";
 import { format } from 'date-fns';
-import { Card, CardHeader, CardBody, Container} from "react-bootstrap";
+import { Container} from "react-bootstrap";
 
 export function SingleDayForecast(props){
     const data = props.weatherData

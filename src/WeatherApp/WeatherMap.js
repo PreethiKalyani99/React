@@ -25,7 +25,6 @@ export function WeatherMap(){
             console.error("Error:", error)
         }
     }
-    console.log(cityInfo)
     return (
         <>
             <SearchBar
