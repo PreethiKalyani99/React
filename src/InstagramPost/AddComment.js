@@ -1,18 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import profile from '../utils/assets/icons/profile.png';
 import {  Row, Col, Button} from "react-bootstrap";
 
 export function PostComment(props){
+    const [count, setCount] = useState(0)
     function handleCommentChange(e) {
         props.setComment(e.target.value)
     }
 
     function handleCommentSubmit(e) {
         e.preventDefault();
+        setCount(count+1)
         if (props.comment !== "") {
             const newComment = {
                 user: "Preethi",
-                text: props.comment
+                text: props.comment,
+                isLiked: false,
+                id: count
             }
             props.setOldComments([newComment, ...props.oldComments])
             props.setComment("")
