@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Card, CardHeader, CardBody} from "react-bootstrap";
 import { SingleDayForecast } from "./SingleDayForecast";
 
-export function DisplayWeather(props){
+export function WeatherForecast(props){
     return (
         <>
             <Container>
@@ -10,8 +10,8 @@ export function DisplayWeather(props){
                     <CardHeader className="header font">
                         {props.weatherForecast.length}-Day Forecast.
                     </CardHeader>
-                    <div className={props.weatherForecast.length === 0 ? "hide" : "city-name fontColor"}>{props.cityInfo}</div>
-                    <CardBody className={props.weatherForecast.length === 0 ? "hide" : "header"}>
+                    <div className="city-name fontColor">{props.cityInfo}</div>
+                    <CardBody className="header">
                         {props.weatherForecast && props.weatherForecast.map((item, index) => <SingleDayForecast weatherData={item} i={index}/>)}
                     </CardBody>
                 </Card>
