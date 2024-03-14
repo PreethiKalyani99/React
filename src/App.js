@@ -11,7 +11,8 @@ import { Player } from './ReactPlayerPackage';
 import { SongSelection } from './SongSelection';
 import { InstaPost } from './InstagramPost/InstaPost';
 import { CalculatorUsingReducer } from './CalculatorUsingReducer';
-
+import { WeatherMap } from './WeatherApp/WeatherMap';
+import { useConsoleLog } from './customHook';
 
 export const globalProp = createContext(null)
 
@@ -27,7 +28,7 @@ function App() {
       console.log('Light mode on')
     }
   }
-  console.log(isDarkModeOn, "mode")
+  useConsoleLog(isDarkModeOn, "modesd", 'slkdfjsak')
   return (
     <>
     <globalProp.Provider value='Preethi'>
@@ -37,7 +38,8 @@ function App() {
     {/* <CalculatorUsingReducer/> */}
       <nav>
       <Link to='/stopwatch' className='me-4'>StopWatch</Link>
-      <Link to='/instapost'>Insta Post</Link>
+      <Link to='/instapost' className='me-4'>Insta Post</Link>
+      <Link to='/weathermap'>Weather Map</Link>
       </nav>
       <Routes>
       <Route path='/' element={<UseReducerHook/>}/>
@@ -45,6 +47,7 @@ function App() {
       <Route path='/context' element={<UseContextHook/>} />
       <Route path='/stopwatch' element={<StopWatch/>} />
       <Route path='/instapost' element={<InstaPost/>} />
+      <Route path='/weathermap' element={<WeatherMap/>} />
       </Routes>
     {/* <UseRefForm/> <br/>
     <UseRefHook /> <br/> */}

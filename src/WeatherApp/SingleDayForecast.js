@@ -11,7 +11,9 @@ export function SingleDayForecast(props){
         return date.toLocaleDateString('en-US', options);
     }
 
-    const getFormattedDate = (value) => format(new Date(value), "MMMM do, h:mma")
+    const getFormattedDate = (value) => {
+        console.log(value, 'date')
+        return format(new Date(value), "MMMM do, h:mma")}
 
     const convertToFahrenheit = (value) => {
         const fahrenheit = ((value - 273.15) * 9)/5 + 32;
