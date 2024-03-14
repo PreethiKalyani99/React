@@ -14,7 +14,9 @@ import { CalculatorUsingReducer } from './CalculatorUsingReducer';
 import { WeatherMap } from './WeatherApp/WeatherMap';
 import { useConsoleLog } from './customHook';
 
+
 export const globalProp = createContext(null)
+
 
 function App() {
   let isDarkModeOn = true
