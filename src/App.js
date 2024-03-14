@@ -1,7 +1,7 @@
 import './App.css';
 import { useState } from 'react'
 
-function App(prop) {
+function App(props) {
 
   let [ count, setCount] = useState(0)
 const increment = () => {
