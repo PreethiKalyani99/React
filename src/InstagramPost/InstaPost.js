@@ -8,7 +8,7 @@ import { PostComment } from "./AddComment";
 import { ShowComments } from "./ShowComments";
 
 
-export function InstaPost(){
+export default function InstaPost(){
     const [isLiked, setIsLiked] = useState(false)
     const [comment, setComment] = useState("")
     const [oldComments, setOldComments] = useState([])

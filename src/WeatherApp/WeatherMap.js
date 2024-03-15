@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { SearchBar } from "./SearchBar";
 import { WeatherForecast } from "./DisplayWeather";
 
-export function WeatherMap(){
+export default function WeatherMap(){
     const [input, setInput] = useState("")
     const [weatherForecast, setWeatherForecast] = useState({});
     

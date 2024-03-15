@@ -17,7 +17,7 @@ export function UseRefHook(){
     )
 }
 
-export function StopWatch(){
+export default function StopWatch(){
     const [time, setTime] = useState(null)
     const [timeNow, setTimeNow] = useState(null)
     let intervalId = useRef('')

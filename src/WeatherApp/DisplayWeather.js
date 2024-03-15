@@ -1,6 +1,8 @@
-import React from "react";
+import React, {Suspense, lazy} from "react";
 import { Container, Card, CardHeader, CardBody} from "react-bootstrap";
-import { SingleDayForecast } from "./SingleDayForecast";
+// import { SingleDayForecast } from "./SingleDayForecast";
+
+const SingleDayForecast = lazy(() => import ('./SingleDayForecast'))
 
 export function WeatherForecast(props){
     return (
@@ -12,7 +14,7 @@ export function WeatherForecast(props){
                     </CardHeader>
                     <div className="city-name fontColor">{props.cityInfo}</div>
                     <CardBody className="header">
-                        {props.weatherForecast && props.weatherForecast.map((item, index) => <SingleDayForecast weatherData={item} i={index}/>)}
+                        {props.weatherForecast && props.weatherForecast.map((item, index) => <Suspense fallback={<p><i>Loading...</i></p>}><SingleDayForecast weatherData={item} i={index}/></Suspense>)}
                     </CardBody>
                 </Card>
             </Container>

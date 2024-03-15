@@ -2,7 +2,7 @@ import React from "react";
 import { format } from 'date-fns';
 import { Container} from "react-bootstrap";
 
-export function SingleDayForecast(props){
+export default function SingleDayForecast(props){
     const data = props.weatherData
     console.log(data.weather[0].description, 'weather')
     const getDay = (value) => {
