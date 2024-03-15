@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-tryout/static/css/main.cfea02a8.css",
+    "main.js": "/react-tryout/static/js/main.ea246565.js",
+    "static/js/838.31be826b.chunk.js": "/react-tryout/static/js/838.31be826b.chunk.js",
+    "static/js/461.3650e514.chunk.js": "/react-tryout/static/js/461.3650e514.chunk.js",
+    "static/media/song1.mp3": "/react-tryout/static/media/song1.9731f4cea90425847e1d.mp3",
+    "static/media/profile.png": "/react-tryout/static/media/profile.3f889d0af5f26871fbcc.png",
+    "static/media/clapping.png": "/react-tryout/static/media/clapping.0c0ec02c3d39020832fb.png",
+    "static/media/heart.png": "/react-tryout/static/media/heart.c412cbaead4744166c20.png",
+    "static/media/comment.png": "/react-tryout/static/media/comment.a7384ecae7d2b36a6d50.png",
+    "static/media/redheart.png": "/react-tryout/static/media/redheart.556c78a5a9b89d6b2eeb.png",
+    "static/media/wi-day-sunny.svg": "/react-tryout/static/media/wi-day-sunny.41b3b2cba04b3d8207ad.svg",
+    "static/media/wi-sprinkle.svg": "/react-tryout/static/media/wi-sprinkle.6eb903ca00c65a20c64b.svg",
+    "static/media/wi-cloudy.svg": "/react-tryout/static/media/wi-cloudy.c25ab08b89dc81bfa547.svg",
+    "static/media/wi-cloud.svg": "/react-tryout/static/media/wi-cloud.55d92a74df797c7ded42.svg",
+    "index.html": "/react-tryout/index.html",
+    "main.cfea02a8.css.map": "/react-tryout/static/css/main.cfea02a8.css.map",
+    "main.ea246565.js.map": "/react-tryout/static/js/main.ea246565.js.map",
+    "838.31be826b.chunk.js.map": "/react-tryout/static/js/838.31be826b.chunk.js.map",
+    "461.3650e514.chunk.js.map": "/react-tryout/static/js/461.3650e514.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfea02a8.css",
+    "static/js/main.ea246565.js"
+  ]
+}
