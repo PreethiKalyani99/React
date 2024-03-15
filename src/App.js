@@ -11,8 +11,10 @@ import WeatherMap from '../src/WeatherApp/WeatherMap';
 import StopWatch from '../src/UseRef';
 import { Alert, DeleteButton } from './AlertPopup';
 
+
 export const globalProp = createContext(null)
 // const StopWatch = lazy(() => import ('../src/UseRef'))
+
 
 function App() {
   let isDarkModeOn = true
