@@ -16,7 +16,7 @@ export function SearchBar(props){
         <FaSearch id="search-icon" className="mb-1"/>
         <input 
           type="text" 
-          placeholder="Search location....." 
+          placeholder="Search location..." 
           className="searchInput"
           value={props.input}
           onKeyDown={handleKey}
