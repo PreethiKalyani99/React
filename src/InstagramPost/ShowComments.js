@@ -21,7 +21,7 @@ export function ShowComments(props){
                 props.oldComments.map((comment, index) => (
                     <Row key={index} className="mb-3">
                         <Col lg={1}>
-                            <img src={profile} className="ms-3 me-2" style={{ height: '30px', width: '30px' }} alt="Profile" />
+                            <img src={profile} className="ms-3 me-2" style={{ height: '30px', width: '30px' }} alt="Profile icon" />
                         </Col>
                         <Col>
                             <span className="commentSection"><b>{comment.user}</b>: {comment.text}</span>
@@ -31,6 +31,7 @@ export function ShowComments(props){
                                 src={comment.isLiked ? redHeart : heart} 
                                 style={{ height: '15px', width: '15px' }} 
                                 onClick={() => toggleLike(comment.id)}
+                                alt="heart icon"
                             />
                         </Col>
                     </Row>

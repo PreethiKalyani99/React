@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { UserProfile } from './InstagramPost/UserProfile';
+import { UserProfile } from '../InstagramPost/UserProfile';
 
 
 describe('testing UserProfile component', () => {

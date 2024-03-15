@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import { StopWatch } from './UseRef';
+import StopWatch from '../UseRef';
 
 describe('testing StopWatch component', () => {
   test('render stop watch', () => {

@@ -17,11 +17,12 @@ export function UserInteractions(props){
     return (
         <div className="ms-4 mt-2">
             <img src={props.isLiked ? redHeart : heart} onClick={handleLike} width="30" height="30" alt="heart-icon" className="me-3 mt-2" />
-            <img src={commentIcon} width="30" height="30" className="ms-2 me-3 mt-2" onClick={toggleComments}/>
+            <img src={commentIcon} width="30" height="30" className="ms-2 me-3 mt-2" onClick={toggleComments} alt="comment icon"/>
             <span className="me-3"><b>{props.oldComments.length}</b></span>
             <img src={clap} onClick={() => {
                 props.setClapsCount(props.clapsCount + 1)
-            }} 
+            }}
+            alt="clap icon" 
             width="35" height="35"/>
             <span className="ms-3"><b>{props.clapsCount}</b></span>
         </div> 

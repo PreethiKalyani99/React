@@ -1,4 +1,4 @@
-import { createContext, Suspense, lazy } from 'react';
+import { createContext, Suspense } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 import UseStateHook from './UseState';
@@ -8,8 +8,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useConsoleLog } from './customHook';
 import InstaPost from '../src/InstagramPost/InstaPost';
 import WeatherMap from '../src/WeatherApp/WeatherMap';
-import StopWatch from '../src/UseRef';
-import { Alert, DeleteButton } from './AlertPopup';
+import StopWatch from '../src/UseRef'; 
 
 
 export const globalProp = createContext(null)
